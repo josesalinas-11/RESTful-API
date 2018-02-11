@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Data.Entity", "Fr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Repository", "Framework.Repository\Framework.Repository.csproj", "{B72524BD-C289-4C94-A615-E44C30D02AB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.PropertyMapper", "Framework.PropertyMapper\Framework.PropertyMapper.csproj", "{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{B72524BD-C289-4C94-A615-E44C30D02AB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B72524BD-C289-4C94-A615-E44C30D02AB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B72524BD-C289-4C94-A615-E44C30D02AB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{32EF4634-A632-4E18-B6B1-CB31DB314A9E} = {E48E9C08-2E2A-40E5-AEF8-E257299F8F06}
 		{11950FFE-CE5F-435F-B9BF-FFF72495CDEB} = {E48E9C08-2E2A-40E5-AEF8-E257299F8F06}
 		{B72524BD-C289-4C94-A615-E44C30D02AB8} = {E48E9C08-2E2A-40E5-AEF8-E257299F8F06}
+		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D} = {E48E9C08-2E2A-40E5-AEF8-E257299F8F06}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7562C5E-7074-44A4-9C4D-A70B389E1224}
