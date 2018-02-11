@@ -9,4 +9,11 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Framework.Collections\Framework.Collections.csproj" />
+    <ProjectReference Include="..\Framework.Data.Entity\Framework.Data.Entity.csproj" />
+    <ProjectReference Include="..\Framework.PropertyMapper\Framework.PropertyMapper.csproj" />
+    <ProjectReference Include="..\Framework.Repository\Framework.Repository.csproj" />
+  </ItemGroup>
+
 </Project>
