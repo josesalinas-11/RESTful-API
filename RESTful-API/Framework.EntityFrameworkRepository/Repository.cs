@@ -121,7 +121,7 @@ namespace Framework.EntityFrameworkRepository
         {
             var entities = showDeleted
                 ? _dbSet.AsNoTracking()
-                : _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedOn") == null);
+                : _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedAt") == null);
             return entities.SingleOrDefault(predicate);
         }
 
@@ -129,7 +129,7 @@ namespace Framework.EntityFrameworkRepository
         {
             var entities = showDeleted
                 ? _dbSet.AsNoTracking().AsEnumerable().Select(selector)
-                : _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedOn") == null).Where(predicate).Select(selector);
+                : _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedAt") == null).Where(predicate).Select(selector);
             return entities.FirstOrDefault();
         }
 
@@ -173,7 +173,7 @@ namespace Framework.EntityFrameworkRepository
         {
             var queryable = showDeleted
                 ? _dbSet.AsNoTracking()
-                : _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedOn") == null);
+                : _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeleteAt") == null);
             return includeProperties.Aggregate(queryable, (current, includeProperty) => current.Include(includeProperty));
         }
 
@@ -181,7 +181,7 @@ namespace Framework.EntityFrameworkRepository
         {
             var queryable = showDeleted
                 ? (predicate == null ? _dbSet.AsNoTracking() : _dbSet.AsNoTracking().Where(predicate))
-                : (predicate == null ? _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedOn") == null) : _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedOn") == null).Where(predicate));
+                : (predicate == null ? _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedAt") == null) : _dbSet.AsNoTracking().IgnoreQueryFilters().Where(w => EF.Property<DateTime?>(w, "DeletedAt") == null).Where(predicate));
             queryable = predicate != null ? queryable.Where(predicate).AsQueryable() : queryable;
             return includeProperties.Aggregate(queryable, (current, includeProperty) => current.Include(includeProperty)).AsQueryable();
         }
