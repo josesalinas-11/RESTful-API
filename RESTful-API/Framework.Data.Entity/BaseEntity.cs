@@ -3,7 +3,7 @@ using Framework.Data.Entity.Contract;
 
 namespace Framework.Data.Entity
 {
-    public class BaseEntity : ISoftDelete, IConcurrency
+    public abstract class BaseEntity : ISoftDelete, IConcurrency
     {
 
         #region ISofDelete
