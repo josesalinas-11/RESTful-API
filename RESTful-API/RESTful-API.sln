@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Repository", "Fra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.PropertyMapper", "Framework.PropertyMapper\Framework.PropertyMapper.csproj", "{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{815FF611-48C8-45A0-82E1-3DF29AA18CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.EntityFrameworkRepository", "Framework.EntityFrameworkRepository\Framework.EntityFrameworkRepository.csproj", "{3727A7D7-50DC-4255-8B71-A34DA7E2BAB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3727A7D7-50DC-4255-8B71-A34DA7E2BAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3727A7D7-50DC-4255-8B71-A34DA7E2BAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3727A7D7-50DC-4255-8B71-A34DA7E2BAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3727A7D7-50DC-4255-8B71-A34DA7E2BAB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +52,7 @@ Global
 		{11950FFE-CE5F-435F-B9BF-FFF72495CDEB} = {E48E9C08-2E2A-40E5-AEF8-E257299F8F06}
 		{B72524BD-C289-4C94-A615-E44C30D02AB8} = {E48E9C08-2E2A-40E5-AEF8-E257299F8F06}
 		{21C88DC5-7BF8-41C4-9945-C0506AFAEB0D} = {E48E9C08-2E2A-40E5-AEF8-E257299F8F06}
+		{3727A7D7-50DC-4255-8B71-A34DA7E2BAB1} = {815FF611-48C8-45A0-82E1-3DF29AA18CE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7562C5E-7074-44A4-9C4D-A70B389E1224}
