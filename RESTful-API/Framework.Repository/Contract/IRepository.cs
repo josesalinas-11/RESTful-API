@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Framework.Repository.Contract
 {
-    public interface IRepositoryIRepository<TEntity> : IRepositoryReadOnly<TEntity>, IStoredProcedure
+    public interface IRepository<TEntity> : IRepositoryReadOnly<TEntity>, IStoredProcedure
         where TEntity : class
     {
 
